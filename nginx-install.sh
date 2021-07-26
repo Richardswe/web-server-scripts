@@ -35,9 +35,6 @@ if [ "$(rpm -q --last='${Status}' "nginx" 2>/dev/null | grep -c "nginx-1.14*")" 
 
 fi
 
-# Curl http://localhost
-# curl http://localhost>/dev/null && echo "$?"
-
 # Checking if fail2ban is installed and installs it, if it's not.
 fail2ban_func "$@"
 if [ "$?" -eq 0 ]
